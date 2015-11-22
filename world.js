@@ -38,7 +38,9 @@ function displayResult(data){ //alert(data.responseText);
     var str= document.createElement('ol');  // Create an ordered list
                     
     var xml_data = data.responseXML;
+    console.log(xml_data);
     var countryA = xml_data.getElementsByTagName('name');
+    console.log(countryA);
     var rulerA = xml_data.getElementsByTagName('ruler');
 
     for(var i = 0; i < countryA.length; i++){

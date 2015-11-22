@@ -13,7 +13,7 @@
   if($ALL==true and $LOOKUP==null){ //If No Search criteria was entered
     # execute a SQL query on the database (ALL)
     $sql_all = "SELECT name,head_of_state FROM countries";
-    $r_all = mysql_query($sql_all); print $r_all; //Resource/Table set returned
+    $r_all = mysql_query($sql_all); //print $r_all; //Resource/Table set returned
   
     if($FORMAT == 'xml'){
       header("Content-type: text/xml");
